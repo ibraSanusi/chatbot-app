@@ -42,7 +42,6 @@ Este proyecto es una solución para la prueba técnica de Clintell, cuyo objetiv
 - **Login falso**: validación contra `/data/users.json`.
 - **Listado de chats por usuario**: persistencia temporal con `chatStore`.
 - **Detalle de chat**: mensajes del usuario y respuestas del bot.
-- **Detalle de usuario**: muestra info básica del usuario simulado.
 - **Chatbot**: envía mensaje y obtiene una respuesta simulada (placeholder).
 
 ---
