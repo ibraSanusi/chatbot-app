@@ -1,0 +1,91 @@
+[
+    {
+      "userId": "user_12345",
+      "username": "andrew.neilson",
+      "chats": [
+        {
+          "chatId": "chat_001",
+          "createdAt": "2025-05-06T09:15:00Z",
+          "title": "Crear entorno de juego en HTML",
+          "messages": [
+            {
+              "id": "msg_001",
+              "role": "user",
+              "content": "¿Cómo puedo crear un entorno básico de juego en HTML?",
+              "timestamp": "2025-05-06T09:15:00Z"
+            },
+            {
+              "id": "msg_002",
+              "role": "assistant",
+              "content": "Puedes comenzar con un canvas en HTML y usar JavaScript para manejar el renderizado...",
+              "timestamp": "2025-05-06T09:15:05Z"
+            }
+          ]
+        },
+        {
+          "chatId": "chat_002",
+          "createdAt": "2025-05-05T18:30:00Z",
+          "title": "Diseño UI/UX",
+          "messages": [
+            {
+              "id": "msg_003",
+              "role": "user",
+              "content": "¿Qué es el diseño UI y UX?",
+              "timestamp": "2025-05-05T18:30:00Z"
+            },
+            {
+              "id": "msg_004",
+              "role": "assistant",
+              "content": "UI es la interfaz de usuario, UX es la experiencia del usuario. Ambos son clave en diseño digital...",
+              "timestamp": "2025-05-05T18:30:03Z"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "userId": "user_67890",
+      "username": "sophia.martinez",
+      "chats": [
+        {
+          "chatId": "chat_101",
+          "createdAt": "2025-05-04T14:20:00Z",
+          "title": "Permiso de emergencia",
+          "messages": [
+            {
+              "id": "msg_005",
+              "role": "user",
+              "content": "¿Cómo redacto una carta de permiso por emergencia?",
+              "timestamp": "2025-05-04T14:20:00Z"
+            },
+            {
+              "id": "msg_006",
+              "role": "assistant",
+              "content": "Puedes usar este formato: Estimado/a [nombre], me dirijo a usted para solicitar un permiso por emergencia debido a...",
+              "timestamp": "2025-05-04T14:20:05Z"
+            }
+          ]
+        },
+        {
+          "chatId": "chat_102",
+          "createdAt": "2025-05-03T10:05:00Z",
+          "title": "Plataforma tipo Google",
+          "messages": [
+            {
+              "id": "msg_007",
+              "role": "user",
+              "content": "¿Cómo puedo hacer un motor de búsqueda tipo Google?",
+              "timestamp": "2025-05-03T10:05:00Z"
+            },
+            {
+              "id": "msg_008",
+              "role": "assistant",
+              "content": "Primero necesitas un crawler que recopile información, luego una base de datos indexada y finalmente un sistema de ranking de resultados...",
+              "timestamp": "2025-05-03T10:05:10Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  

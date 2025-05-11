@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🧠 Chatbot App – Prueba Técnica Full Stack (Next.js)
 
-## Getting Started
+Este proyecto es una solución para la prueba técnica de Clintell, cuyo objetivo es demostrar habilidades como Full Stack Developer con enfoque en Frontend usando Next.js 14 (App Router). La aplicación permite a usuarios autenticarse con login simulado, interactuar con un chatbot y ver su historial de conversaciones.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Tecnologías principales
+
+- **Next.js 14** con App Router
+- **TypeScript**
+- **Zustand** para estado global
+- **Tailwind CSS**
+- **API Routes** simuladas con `fetch` local
+- **JSON** como base de datos mock (usuarios y chats)
+- **Figma** para replicar la UI base
+
+---
+
+## 🧱 Estructura del Proyecto
+
+```
+/app
+  ├── /api                → Rutas API para login, usuario y chats
+  ├── /components         → Componentes compartidos globales
+  ├── /helpers            → Funciones auxiliares como generación de títulos
+  ├── /hooks              → Custom Hooks (ej: input del chat)
+  ├── /interfaces         → Tipado global con TypeScript
+  ├── /lib/api            → Lógica para llamadas a API internas
+  ├── /pages              → Rutas legacy como /auth/login (puede migrarse a /app)
+  ├── /ui                 → Componentes UI base (Button, Iconos, etc.)
+  └── /store/chatStore.ts → Estado global (chats, mensajes)
+
++ /data/                  → Archivos JSON para usuarios y chats simulados
++ /auth.ts                → Lógica auxiliar de autenticación
++ /middleware.ts          → Middleware para proteger rutas y verificar tokens/cookies
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✅ Funcionalidades
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Login falso**: validación contra `/data/users.json`.
+- **Listado de chats por usuario**: persistencia temporal con `chatStore`.
+- **Detalle de chat**: mensajes del usuario y respuestas del bot.
+- **Detalle de usuario**: muestra info básica del usuario simulado.
+- **Chatbot**: envía mensaje y obtiene una respuesta simulada (placeholder).
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## ▶️ ¿Cómo ejecutar?
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clona el repositorio:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   git clone https://github.com/tuusuario/chatbot-app.git
+   cd chatbot-app
+   ```
 
-## Deploy on Vercel
+2. Instala dependencias:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. Ejecuta el servidor de desarrollo:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Abre en tu navegador:
+   ```
+   http://localhost:3000
+   ```
+
+---
+
+## 🔍 Decisiones técnicas
+
+- **Next.js App Router**: mejor organización y escalabilidad por segmentos.
+- **Zustand**: más simple que Redux para esta escala; buena integración con el flujo de mensajes.
+- **JSON simulados**: más rápido para pruebas, imitando una BBDD simple.
+- **Modularidad**: separación clara por responsabilidades: API, lógica, vistas y componentes base.
+- **Middleware de autenticación**: protege rutas sensibles (como `/chats`) verificando cookies y redirigiendo al login en caso necesario.
+
+---
+
+## 📈 Posibles mejoras
+
+- Persistencia real con SQLite, PostgreSQL o Firebase.
+- Autenticación con NextAuth u OAuth.
+- Integración con API de OpenAI o HuggingFace.
+- Soporte offline (IndexedDB o LocalStorage).
+- Pruebas unitarias con Jest o Testing Library.
+- Dark mode y accesibilidad (a11y).
+- Mejor manejo de errores y loading states.
+
+---
+
+## 📬 Contacto
+
+Ibrahim Sanusi
+Frontend Developer
+📧 ibra.sanusi.ayo@gmail.com
