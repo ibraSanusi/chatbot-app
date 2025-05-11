@@ -52,7 +52,7 @@ Este proyecto es una solución para la prueba técnica de Clintell, cuyo objetiv
 1. Clona el repositorio:
 
    ```bash
-   git clone https://github.com/tuusuario/chatbot-app.git
+   git clone https://github.com/ibraSanusi/chatbot-app.git
    cd chatbot-app
    ```
 
